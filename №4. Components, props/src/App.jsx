@@ -1,5 +1,6 @@
 import './App.css'
 import Car from './components/Car'
+import Cat from './components/Cat'
 
 function App() {
 	return (
@@ -10,6 +11,8 @@ function App() {
 				name='Lamborghini Urus!'
 				description="This is my teacher's lovely car."
 			></Car>
+
+			<Cat message='Meow Meow ~(≧∀≦)~'></Cat>
 		</>
 	)
 }
