@@ -1,0 +1,41 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 10vh;
+}
+
+.search-wrapper {
+	display: flex;
+	gap: 10px;
+	margin-top: 40px !important;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.search-wrapper input {
+	width: 75%;
+	padding: 5px;
+	border-color: rgba(128, 128, 128, 0.2);
+	border-radius: 5px;
+}
+
+.btn {
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+
+.search-wrapper .btn {
+	width: 20%;
+}
