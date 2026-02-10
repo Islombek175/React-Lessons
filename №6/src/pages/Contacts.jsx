@@ -1,7 +1,9 @@
 function Contacts() {
 	return (
 		<>
-			<div className='shop-container'>Contacts</div>
+			<div className='container'>
+				<h1>Contacts</h1>
+			</div>
 		</>
 	)
 }

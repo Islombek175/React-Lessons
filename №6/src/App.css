@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+nav ul {
+	height: 7vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(0, 0, 0);
+	box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.1);
+	font-size: 2rem;
+	list-style: none;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+	max-width: 60%;
+	margin: 10% auto;
+	text-align: center;
+}
+
+.counter-wrapper {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.count-title {
+	margin: 1vh;
+}
+
+.increment,
+.decrement {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 8px;
+	border: none;
+	margin: 0 1vw;
+}
+
+.decrement {
+	background-color: red;
+}
+
+.increment {
+	background-color: green;
+}

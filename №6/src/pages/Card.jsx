@@ -1,7 +1,9 @@
 function Card() {
 	return (
 		<>
-			<div className='card-container'>Card</div>
+			<div className='container'>
+				<h1>Card</h1>
+			</div>
 		</>
 	)
 }

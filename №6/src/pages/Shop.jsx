@@ -1,7 +1,9 @@
 function Shop() {
 	return (
 		<>
-			<div className='shop-container'>Shop</div>
+			<div className='container'>
+				<h1>Shop</h1>
+			</div>
 		</>
 	)
 }
