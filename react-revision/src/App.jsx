@@ -1,35 +1,29 @@
-import { Link, Route, Routes } from 'react-router'
+import { Route, Routes } from 'react-router'
 import './App.css'
-import About from './components/About'
-import Home from './components/Home'
-import Projects from './components/Projects'
+import Header from './components/Header'
+import Layout from './layouts/Layout'
+import ProjectsLayout from './layouts/ProjectsLayout'
+import About from './pages/About'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Stopwatch from './pages/Stopwatch'
+import ToDoApp from './pages/ToDoApp'
 
 function App() {
 	return (
 		<>
-			<nav>
-				<div className='logo'>
-					<h1>Islombek</h1>
-				</div>
-				<ul>
-					<li>
-						<Link to='/'>Home</Link>
-					</li>
+			<Header></Header>
 
-					<li>
-						<Link to='/about'>About</Link>
-					</li>
-
-					<li>
-						<Link to='/projects'>Projects</Link>
-					</li>
-				</ul>
-			</nav>
-			;
 			<Routes>
-				<Route path='/' element={<Home></Home>}></Route>
-				<Route path='/about' element={<About></About>}></Route>
-				<Route path='/projects' element={<Projects></Projects>}></Route>
+				<Route path='/' element={<Layout />}>
+					<Route path='/' element={<Home />}></Route>
+					<Route path='/about' element={<About />}></Route>
+					<Route path='/projects' element={<Projects />}></Route>
+					<Route path='/projects' element={<ProjectsLayout />}>
+						<Route path='/projects/todo' element={<ToDoApp />}></Route>
+						<Route path='/projects/stopwatch' element={<Stopwatch />}></Route>
+					</Route>
+				</Route>
 			</Routes>
 		</>
 	)

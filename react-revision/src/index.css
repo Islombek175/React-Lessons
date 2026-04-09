@@ -1,0 +1,35 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+li a {
+	color: rgb(61, 61, 61);
+}
+
+nav {
+	background-color: cadetblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+nav ul {
+	display: flex;
+	gap: 20px;
+}
+
+/* ----- LAYOUT ----- */
+
+.container {
+	max-width: 60%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	text-align: center;
+}
