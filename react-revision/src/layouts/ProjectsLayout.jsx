@@ -4,7 +4,7 @@ function ProjectsLayout() {
 	return (
 		<>
 			<div>
-				<Link to='/projects'>Back</Link>
+				<Link to='/projects'><i class="fa-solid fa-left-long"></i></Link>
 			</div>
 			<Outlet />
 		</>
